@@ -202,6 +202,14 @@ public class ProgramTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    // @Test
-    // public void hello() {}
+    @Test
+    public void testremovepunctuation() {
+        String input="Hello, thank you!";
+        String expect = "hellothankyou";
+        String actual = Program.removePunctuation(input);
+        
+        assertEquals(expect,actual);
+    
+    
+    }
 }
