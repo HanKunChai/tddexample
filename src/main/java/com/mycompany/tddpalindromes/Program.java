@@ -95,10 +95,10 @@ public class Program
     public static String removePunctuation(String phrase)
     {   
         String lowercase = makeLowerCase(phrase);
-        char [] phrasechar= lowercase.toCharArray();
+        char [] phrasechar= phrase.toCharArray();
         String phraseoffpun ="";
         for(int i =0; i<phrasechar.length;i++){
-            if(phrasechar[i]>='a'&&phrasechar[i]<='z'){
+            if((phrasechar[i]>='a'&&phrasechar[i]<='z')||(phrasechar[i]>='0'&&(phrasechar[i])<='9')||(phrasechar[i]>='A'&&(phrasechar[i])<='Z')){
             phraseoffpun =phraseoffpun +(char)(phrasechar[i]);
             }
             

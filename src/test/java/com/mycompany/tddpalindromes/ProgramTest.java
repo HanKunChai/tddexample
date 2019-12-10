@@ -204,8 +204,8 @@ public class ProgramTest {
     //
     @Test
     public void testremovepunctuation() {
-        String input="Hello, thank you!";
-        String expect = "hellothankyou";
+        String input="Hello, thank you! 12121";
+        String expect = "Hellothankyou12121";
         String actual = Program.removePunctuation(input);
         
         assertEquals(expect,actual);
